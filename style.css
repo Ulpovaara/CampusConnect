@@ -50,13 +50,19 @@
   width: 100%;
 position:fixed;
 bottom:0px;
-text-align: center;}
+text-align: center;
+display: flex;
+  padding:5px 0px 0px  0px; 
+  color:white;
+& div {flex:1}}
 
 .welcome {background-image: url(koulu.jpg);
 background-repeat: no-repeat;
 background-size: cover;
 padding: 10px;
 font-weight: bold;}
+
+footer {}
 
   /* -------------------
      Pikapalvelut
