@@ -11,6 +11,13 @@
     --border-radius: 8px;
   }
 
+  @media (prefers-color-scheme: dark) {
+  body {
+    background: red;
+    color:yellow;
+  }
+}
+
   /* -------------------
      Yleiset tyylit
   ------------------- */
