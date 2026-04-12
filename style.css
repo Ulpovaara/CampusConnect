@@ -1,3 +1,24 @@
+ 
+ 
+:root {
+  color-scheme: light dark;
+}
+
+
+/* Vaalea tila */
+:root {
+  --bg: #ffffff;
+  --text: #1a1a1a;
+}
+
+/* TUMMA TILA – käsin suunniteltu */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121212;
+    --text: #e0e0e0;
+  }
+}
+
  /* -------------------
      CSS-muuttujat
   ------------------- */
@@ -11,11 +32,7 @@
     --border-radius: 8px;
   }
 
-  @media (prefers-color-scheme: dark) {
-  :root {--text-color:  yellow;    /* sininen painikkeille */
-    --bg-color: red;
-  }
-}
+
 
   /* -------------------
      Yleiset tyylit
@@ -23,8 +40,8 @@
   body {
     margin: 0;
     font-family: var(--font-family);
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    background-color: var(--bg;
+    color: var(--text);
   }
 
  
