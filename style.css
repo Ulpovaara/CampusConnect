@@ -1,4 +1,4 @@
- 
+ /*
  
 :root {
   color-scheme: light dark;
@@ -17,16 +17,16 @@
     --bg: #121212;
     --text: red;
   }
-}
+}*/
 
  /* -------------------
      CSS-muuttujat
   ------------------- */
   :root {
     --primary-color: #007bff;      /* sininen painikkeille */
-    --secondary-color: #f5f5f5;    /* taustaväri kortteihin */
+    --secondary-color: #f5f5f5;    /*tausta kortteihin */
     --text-color: #212121;         /* pääteksti */
-    --bg-color: #ffffff;           /* sivun tausta */
+    --bg-color: red;           /* sivun tausta */
     --font-family: 'Helvetica', sans-serif;
     --font-heading: 'Arial Black', sans-serif;
     --border-radius: 8px;
@@ -40,8 +40,8 @@
   body {
     margin: 0;
     font-family: var(--font-family);
-    background-color: var(--bg);
-    color: var(--text);
+    background-color: var(--bg-color);
+    color: var(--text-color);
   }
 
  
