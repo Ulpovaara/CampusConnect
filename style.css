@@ -1,9 +1,27 @@
 
+ /* -------------------
+     vaalean tilan pakotusyritys
+  ------------------- */
+* {
+  forced-color-adjust: none;
+}
+
+: root {
+
+ color-scheme: only light;
+
+}
+
+ img, svg {
+  filter: none !important;
+  color-scheme: light !important;
+}
 
  /* -------------------
      CSS-muuttujat
   ------------------- */
   :root {
+   
     --primary-color: #007bff;      /* sininen painikkeille */
     --secondary-color: #f5f5f5;  /*tausta kortteihin */
     --text-color: #212121;         /* pääteksti */
@@ -25,6 +43,7 @@
     color: var(--text-color);
   }
 
+ 
  
 
   header {
