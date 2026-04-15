@@ -20,10 +20,10 @@
   ------------------- */
   :root {
    
-    --primary-color: #007bff;      /* sininen painikkeille */
-    --secondary-color: #e4dcdc; !important; /*tausta kortteihin */
-    --text-color: #212121;  !important;       /* pääteksti */
-    --bg-color: #f7f2f2;      !important;     /* sivun tausta */
+    --primary-color: #007bff !important;   /* sininen painikkeille */
+    --secondary-color: #240202 !important; /*tausta kortteihin */
+    --text-color: #212121  !important;       /* pääteksti */
+    --bg-color: red   !important;     /* sivun tausta */
     --font-family: 'Helvetica', sans-serif;
     --font-heading: 'Arial Black', sans-serif;
     --border-radius: 8px;
