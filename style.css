@@ -22,7 +22,7 @@
    
     --primary-color: #007bff !important;   /* sininen painikkeille */
     --secondary-color: #f1eaea !important; /*tausta kortteihin */
-    --text-color: #212121  !important;       /* pääteksti */
+    --text-color: red  !important;       /* pääteksti */
     --text-color-secondary: white;
     --bg-color: white !important;     /* sivun tausta */
     --font-family: 'Helvetica', sans-serif;
@@ -40,7 +40,7 @@
     font-family: var(--font-family);
     background-color: var(--bg-color);
     color: var(--text-color);
-    background-image: url(tausta_punainen.png);
+    background-image: url(tausta_valkoinen.png);
   }
 
  
