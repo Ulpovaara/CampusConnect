@@ -18,18 +18,24 @@
  /* -------------------
      CSS-muuttujat
   ------------------- */
-  :root {
-   
-    --primary-color: #007bff !important;   /* sininen painikkeille */
-    --secondary-color: #f1eaea !important; /*tausta kortteihin */
-    --text-color: Black !important;       /* pääteksti */
-    --text-color-secondary: white;
-    --bg-color: white !important;     /* sivun tausta */
-    --font-family: 'Helvetica', sans-serif;
-    --font-heading: 'Arial Black', sans-serif;
-    --border-radius: 8px;
-  }
+  
+:root {
+--color-primary:rgb(0,121,194);   /*HH Blue */
+--color-secondary:rgb(202,213,16);  /* HH APPLE GREEN */
+--color-accent:rgb(223,0,110);      /* HH PINK */
+--color-background:rgb(255,255,255);/* valkoinen */
+--color-surface:rgb(230,230,230);   /* harmaa*/
+--color-text:rgb(0,0,0); /* musta */
+--color-text-secondary:rgb(255,255,255); /*valkoinen*/
 
+--color-background-secondary:var(--color-primary);
+--color-accent-secondary:var(--color-accent);
+--color-border	: var(--color-primary);
+
+ --font-body: "Roboto", sans-serif;   
+ --font-heading : "Roboto", sans-serif; 
+ --border-radius: 8px;
+}
 
 
   /* -------------------
@@ -37,9 +43,9 @@
   ------------------- */
   body {
     margin: 0;
-    font-family: var(--font-family);
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    font-family: var(--font-body);
+    background-color: var(--color-background);
+    color: var(--color-text);
     
   }
 
@@ -47,8 +53,8 @@
  
 
   header {
-    background-color: var(--primary-color);
-    color: var(--text-color-secondary);
+    background-color: var(--color-background-secondary);
+    color: var(--color-text-secondary);
     padding:1px;
     text-align: center;
     font-family: var(--font-heading);
@@ -60,15 +66,16 @@
   h3 {margin-bottom:0px}
 
   h2 {font-size: 1.2rem;}
-  main {padding: 1rem;
+  main {padding: 1rem;padding-bottom: 40px;
     
   }
 
+  footer a {text-decoration: none; color:var(--color-text-secondary)}
   .hello {font-size: 1.2em;
   
 }
 
-  footer {background-color: var(--primary-color);
+  footer {background-color: var(--color-background-secondary);
   height: 50px;
   width: 100%;
 position:fixed;
@@ -76,7 +83,7 @@ bottom:0px;
 text-align: center;
 display: flex;
   padding:5px 0px 0px  0px; 
-  color:var(--text-color-secondary);
+  color:var(--color-text-secondary);
 & div {flex:1}}
 
 .welcome {background-image: url(koulu.jpg);
@@ -97,8 +104,8 @@ font-weight: bold;}
   }
 
   .service-btn {
-    background-color: var(--primary-color);
-    color: var(--text-color-secondary);
+    background-color: var(--color-background-secondary);
+    color: var(--color-text-secondary);
     padding: 1rem 0;
     text-align: center;
     border-radius: var(--border-radius);
@@ -117,25 +124,33 @@ font-weight: bold;}
   }
 
   .news, .events {
-    background-color: var(--secondary-color);
+    background-color: var(--color-surface);
     
     border-radius: var(--border-radius);
+    padding-left: 10px;
+    padding-right: 10px;
   }
+  #news {padding-left: 20px;}
+  #news  li {display: none;}
+  #news .start {display: list-item;}
 
   .events-item {
     margin-bottom: 0.5rem;
     padding: 0.5rem;
-    background-color: var(--bg-color);
+    background-color: var(--color-background);
     border-radius: var(--border-radius);
     display: flex;
     gap:10px;
     align-items: center;
+
     & img {width: 80px; height: 80px; border-radius:5px}
     & h3 {margin: 0 auto}
     & ul {margin: 0; list-style-type: none;
        padding-left:5px}
     & button {height: 2em;}
-    & div {flex:1}}
+    & div {flex:1}
+  
+  }
   
 
 .events:last-child {
@@ -145,8 +160,8 @@ font-weight: bold;}
   }
 
   .btn-event {
-    background-color: var(--primary-color);
-    color:var(--text-color-secondary);
+    background-color: var(--color-background-secondary);
+    color:var(--color-text-secondary);
     border: none;
     padding: 0.3rem 0.6rem;
     border-radius: var(--border-radius);
@@ -154,8 +169,16 @@ font-weight: bold;}
     font-size: 0.8rem;
   }
  h3 {font-size: 1rem;}
+
+ /* -----------------------------
+     palvelut
+  ----------------------------- */
+.palvelut img {border:2px solid var(--color-primary);
+              border-radius: 10px;}
+
+ 
   /* -------------------
-     Responsiivisuus mobiili
+     Responsiivisuus 
   ------------------- */
   @media (min-width: 600px) {
     .dashboard {
@@ -165,6 +188,8 @@ font-weight: bold;}
     .news {
       flex: 1;
     }
+
+  #news li {display: list-item;}
     .events {
       flex: 1;
     }
