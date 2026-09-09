@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 165.36 165.36">
+  <rect x="1.5" y="1.5" width="162.36" height="162.36" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10; stroke-width: 3px;"/>
+  <rect x="35.54" y="9.05" width="94.27" height="114.63" rx="9.04" ry="9.04" style="fill: #00aacd; stroke: #000; stroke-miterlimit: 10; stroke-width: 3px;"/>
+  <path d="M127.77,149.1H36.89c-7.02,0-12.7-5.69-12.7-12.71s5.69-12.7,12.7-12.7h90.88c-7.02,0-12.71,5.69-12.71,12.7s5.69,12.71,12.71,12.71Z" style="fill: none; stroke: #000; stroke-miterlimit: 10; stroke-width: 3px;"/>
+  <path d="M38.39,9.05v114.63h-1.5c-7.02,0-12.7,5.69-12.7,12.7l1.49-114.63c0-7.02,5.69-12.7,12.71-12.7Z" style="fill: #00aacd; stroke: #000; stroke-miterlimit: 10; stroke-width: 3px;"/>
+  <rect x="50.79" y="24.33" width="68.7" height="32.9" rx="12" ry="12" style="fill: #00aacd; stroke: #000; stroke-miterlimit: 10; stroke-width: 3px;"/>
+  <line x1="52.78" y1="68.75" x2="116.71" y2="68.75" style="fill: none; stroke: #000; stroke-miterlimit: 10; stroke-width: 3px;"/>
+  <line x1="52.78" y1="81.06" x2="102.81" y2="81.06" style="fill: none; stroke: #000; stroke-miterlimit: 10; stroke-width: 3px;"/>
+  <line x1="31.29" y1="136.39" x2="115.06" y2="136.39" style="fill: none; stroke: #000; stroke-miterlimit: 10; stroke-width: 3px;"/>
+  <polygon points="38.39 136.39 38.39 157.8 45.58 150.46 51.56 157.8 52.78 136.67 38.39 136.39" style="fill: #00aacd; stroke: #000; stroke-miterlimit: 10; stroke-width: 3px;"/>
+</svg>
