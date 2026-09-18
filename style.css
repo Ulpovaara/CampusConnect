@@ -1,21 +1,5 @@
 
  /* -------------------
-     vaalean tilan pakotusyritys
-  ------------------- */
-* {
-  forced-color-adjust: none;
-}
-
-: root {
- color-scheme: only light;
-}
-
- img, svg {
-  filter: none !important;
-  color-scheme: light !important;
-}
-
- /* -------------------
      CSS-muuttujat
   ------------------- */
   
@@ -48,8 +32,6 @@
     color: var(--color-text);
     
   }
-
- 
  
 
   header {
@@ -96,21 +78,16 @@ font-weight: bold;}
   /* -------------------
      Pikapalvelut
   ------------------- */
-  .quick-services {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0.5rem;
+  #quick-services {
+    display: flex;
+   gap: 10px;
     margin-bottom: 1rem;
   }
 
-  .service-btn {
-    background-color: var(--color-background-secondary);
-    color: var(--color-text-secondary);
-    padding: 1rem 0;
-    text-align: center;
-    border-radius: var(--border-radius);
-    font-size: 0.9rem;
-    text-decoration: none;
+  .service-btn img {width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+   
   }
 
   /* -------------------
@@ -123,16 +100,38 @@ font-weight: bold;}
     gap: 1rem;
   }
 
-  .news, .events {
-    background-color: var(--color-surface);
-    
+  #news, .events {
+    background-color: var(--color-surface);    
     border-radius: var(--border-radius);
     padding-left: 10px;
     padding-right: 10px;
   }
-  #news {padding-left: 20px;}
-  #news  li {display: none;}
-  #news .start {display: list-item;}
+
+  #news h2 {font-size:1em;
+            display: flex;
+                     
+}
+
+  #news li {font-size: 0.8em;
+            display: none;}
+
+  #news li span {font-weight: 700;}
+
+  #news ul {      
+           background-color: var(--color-background);
+    border-radius: var(--border-radius);
+    padding:5px 0px 5px 20px;   
+           }
+
+  #news li::marker {color:var(--color-primary); font-size:1.5em}
+  #news a {color:var(--color-text);
+           text-decoration: none;}
+ 
+  #news .start {display: list-item;  
+  /* aloitusnäytön uutiset */
+     
+      
+     margin-bottom: 5px}
 
   .events-item {
     margin-bottom: 0.5rem;
