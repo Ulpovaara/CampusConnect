@@ -9,6 +9,7 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Elina">
   <link href="style.css" rel="stylesheet" type="text/css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,17 +19,19 @@ main {display: flex; flex-wrap: wrap; text-align: center; padding-bottom: 50px; 
 
 main div {margin:10px}
 
- header {
-      display: flex;
-      align-items: center;
-          /* Keskittää pystysuunnassa */
-    justify-content: center;   /* Keskittää vaakasuunnassa (valinnainen) */
-    height: 50px;             /* Elementillä on oltava jokin korkeus */
-}
-  
 
 
-header img { position:absolute; top: 5px; left:5px}
+header {background-color: var(--color-background);
+        color:var(--color-primary);
+      text-align: left;}
+      
+header h1 {text-align: center;}
+
+header  a {font-size: 3em;
+           color:var(--color-primary);
+          text-decoration: none;
+          margin-left:10px}
+
 
   </style>
 
@@ -37,9 +40,12 @@ header img { position:absolute; top: 5px; left:5px}
 
 <body>
 
+
   <header>
- <a href="index.html"><img src="nuoli_takaisin.png" alt=""></a>
+    <a href="index.html">&lt;</a>
     <h1>Palvelut</h1>
+
+  </header>
 
     
   </header>
