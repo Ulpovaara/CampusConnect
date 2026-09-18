@@ -22,6 +22,7 @@
 }
 
 
+
   /* -------------------
      Yleiset tyylit
   ------------------- */
@@ -48,7 +49,7 @@
   h3 {margin-bottom:0px}
 
   h2 {font-size: 1.2rem;}
-  main {padding: 1rem;padding-bottom: 40px;
+  main {padding-top:1em; padding-bottom: 40px;
     
   }
 
@@ -80,6 +81,7 @@ font-weight: bold;}
   ------------------- */
   #quick-services {
     display: flex;
+    justify-content:center;
    gap: 10px;
     margin-bottom: 1rem;
   }
