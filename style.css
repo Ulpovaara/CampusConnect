@@ -102,13 +102,7 @@ display: flex;
     flex-direction: column;
     gap: 1rem;
   }
-  /*
-  #news, #events {
-    background-color: var(--color-surface);    
-    padding-left: 10px;
-    padding-right: 10px;
-  }*/
-
+ 
   #news {
       & h2 {font-size:1em;background-color: var(--color-surface);
       padding:10px }         
@@ -118,14 +112,14 @@ display: flex;
         padding:0px 0px 5px; margin-bottom: 5px; margin-left:2px;}
        & li::marker {color:var(--color-primary); font-size:1.5em}
            & .start {display:list-item} 
-      & li {font-size: 0.8em;
+      & li {font-size: 0.9em;
             display: none;
             list-style-position: inside;
             padding-left: 5px;}
       & li span {font-weight: 700;}
         & a {color:var(--color-text);
            text-decoration: none;}
-      & }
+        }
         
 #events {background-color: var(--color-surface);    
     padding-left: 10px;
@@ -164,12 +158,17 @@ display: flex;
     font-size: 0.8rem;
   }
 
-
- /* -----------------------------
-     palvelut
-  ----------------------------- */
-.palvelut img {border:2px solid var(--color-primary);
-              border-radius: 10px;}
+/* -------------------
+alisivujen headerit 
+-----------------------*/
+.sub_header { background-color: var(--color-background);
+       text-align: left;
+   & h1 {color:var(--color-primary); text-align: center;}
+    & a {font-size: 3em;
+           color:var(--color-primary);
+          text-decoration: none;
+          margin-left:10px}
+    }
 
  
   /* -------------------
