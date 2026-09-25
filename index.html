@@ -4,66 +4,63 @@
 
 <title>CampusConnect</title>
 
-<meta name="color-scheme" content="only light">
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="Elina">
-<link href="style.css"  rel="stylesheet" type="text/css">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0079C2">
 
-<meta name="theme-color" content="#007bff">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link href="style.css"  rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
 
 </head>
 <body>
 
-<header>
-    
-    <h1><i class="fa fa-mortar-board"></i> CampusConnect</h1>
-    <div class="welcome">
+<header>    
+  <h1><i class="fa-solid fa-graduation-cap"></i> CampusConnect</h1>
+  <!-- ylätunnisteessa taustakuva ja tervetuloteksti -->
+  <div class="welcome">
     <p class="hello">Hei, Elina!</p>
     <p>Tervetuloa kampukselle!</p>
-
-    </div>
-  </header>
+  </div>
+</header>
 
 <main>
   
   <!-- Pikapalvelut -->
-  <div id="quick-services">    
-    <a href="#" class="service-btn"><img src="kuvat/palvelu_A.png" alt="palveluA"></a>
+  <!-- Liitä näihin kuvakkeet ja linkit. -->
+  <section id="quick-services">    
+    <a href="palvelut/palvelu_A.html" class="service-btn"><img src="kuvat/palvelu_A.png" alt="palveluA"></a>
     <a href="#" class="service-btn"><img src="kuvat/palvelu_B.png" alt="palveluB"></a>
     <a href="#" class="service-btn"><img src="kuvat/palvelu_C.png" alt="palveluC"></a>
-    <a href="#" class="service-btn"><img src="kuvat/palvelu_D.png" alt="palvelu_D"></a>
-    
-  </div>
+    <a href="#" class="service-btn"><img src="kuvat/palvelu_D.png" alt="palvelu_D"></a>    
+  </section>
 
   <!-- Dashboard: uutiset ja tapahtumat -->
-  <section class="dashboard">
+  <section id="dashboard">
     <div id="news">
       <h2>Tärkeimmät tänään</h2>
       <ul>
-        <li class="start"><a href="uutiset/uutinen_campuscafe.html"><span>Uusi kahvila CampusCafe avattu</span><br>CampusCafe avasi ovensa Pasilan kampuksella. Avajaistarjoukset jatkuvat koko viikon.<span>-&gt;</span></a></li>
-        <li class="start"><span>Nelli Matula esiintyi avajaisissa</span><br>
-        Nelli matula esiityi Pasilan kampuksen avajaisissa. Tilaisuus streemattiin muihin kampuksille. <span>-&gt;</span></li>
-       
-         <li><a href=""><span>Uusi opiskelija ruokala on avattu</span> <br>
-          Pasilan kampuksen läheisyyteen on avattu uusia opiskelijaruokala <span>-&gt;</span></a>
+        <!-- start-luokalla nostetaan uutiset etusivulle mobiilissa -->
+        <li class="start"><a href="uutiset/uutinen_campuscafe.html"><span>Uusi kahvila CampusCafe avattu</span><br>CampusCafe avasi ovensa Pasilan kampuksella. Avajaistarjoukset jatkuvat koko viikon.<span>&gt;</span></a></li>
+        <li class="start"><span>Suosittu artisti esiintyi avajaisissa</span><br>
+        Pasilan kampuksen avajaisissa esiintyi yksi tämän hetken valovoimaisimmista artisteista. Tilaisuus striimattiin muihin kampuksille. <span>&gt;</span></li>
+        <li><a href=""><span>Uusi opiskelija ruokala on avattu</span> <br>
+        Pasilan kampuksen läheisyyteen on avattu uusia opiskelijaruokala <span>&gt;</span></a>
         </li>
-        <li><span>Johdanto digitaalisiin palveluihin -opintojakso on saanut uudentoimeksiannon</span><br>nnnn</li>
-        <li><span>Ilmainen joogaviikko 11.- 15.11. </span><br>jjjj</li>
+        <li><span>Johdanto digitaalisiin palveluihin -opintojakso on saanut uudentoimeksiannon</span><br>Johdanto digitaalisiin palveluihin -opintojakso on saanut uuden toimeksiannon, jossa suunnitellaan ja toteutetaan opiskelijoille suunnattua uutta palvelua helpottamaan heidän arkeaan.</li>
+        <li><span>Ilmainen joogaviikko 11.- 15.11. </span><br>Marraskuussa toteutetaan yleisön pyynnöstä suuren suosion saanut joogaviikko jo viidennen kerran.</li>
       </ul>
     </div>
 
-    <div class="events">
+    <div id="events">
       <h2>Tulevat tapahtumat</h2>
+
+      <!-- tapahtumakortit: kuva, otsikko, luettelossa tiedot, linkki ilmoittautumislomakkeeseen -->
       <div class="events-item">
-        <img src="juhlat.png" alt="">
+        <img src="kuvat/juhlat_AI.png" alt="AI:illa tuotettu kuva juhlista">
         <div>
         <h3>Opiskelijabileet</h3>
           <ul><li>Pe 18.9.</li>
@@ -71,11 +68,12 @@
               <li>Juhlatila</li>
               </ul>
        </div>
+       <!-- lomakkeet eivät ole vielä käytössä, joten niihin ei ole linkkejä -->
         <a class="btn-event">Ilmoittaudu</a>
       </div>
 
       <div class="events-item">
-      <img src="ura.png" alt="">
+      <img src="kuvat/ura_AI.png" alt="AI:illa tuotettu kuva kahden ihmisen tapaamisesta">
         <div>
         <h3>Urapäivät</h3>
           <ul><li>Ti 13.10</li>
@@ -87,15 +85,14 @@
       </div>
 
       <div class="events-item">  
-        <img src="jooga.png" alt="">
+        <img src="kuvat/jooga_AI.png" alt="AI:illa tuotettu kuva joogaavasta naisesta">
         <div>
         <h3>Joogasessio</h3>
           <ul><li>Ke 25.11.</li>
               <li>Klo 15:00</li>
               <li>Liikuntasali</li>
               </ul>
-       </div>
-        
+       </div>        
         <a class="btn-event">Ilmoittaudu</a>
       </div>
     
@@ -104,30 +101,29 @@
 
 </main>
 <footer>
-  
+  <!-- linkit portaalin eri osiin -->
   <div>
-   	 <i class="fa fa-home"></i><br>  Koti
+   	 <a href="index.html"><i class="fa-solid fa-house"></i><br>Koti</a>
   </div>
 
   <div>
-  <i class="fa fa-calendar"></i><br>
-  Tapahtumat</div>
+    <a href=""><i class="fa-solid fa-calendar"></i><br>
+  Tapahtumat</a></div>
 
    <div>
-  <a href="uutiset/uutiset.html"><i class="fa fa-rss"></i><br>
+  <a href="uutiset.html"><i class="fa-solid fa-newspaper""></i><br>
   Uutiset</a></div>
   
-  <div>
-    
-   <a href="palvelut.html"><i class="fa fa-institution"></i><br>
+  <div>    
+   <a href="palvelut.html"><i class="fa-solid fa-toolbox"></i><br>
     Palvelut</a>
     </div>
 
-    <div>
-    <i class="fa fa-user-circle"></i><br>  Profiili
+  <div>
+    <a href=""><i class="fa-solid fa-circle-user"></i><br>  Profiili</a>
   </div>
   
-</footer>>
+</footer>
 
 </body>
 </html>

@@ -22,7 +22,6 @@
 }
 
 
-
   /* -------------------
      Yleiset tyylit
   ------------------- */
@@ -34,15 +33,13 @@
     
   }
  
-
   header {
     background-color: var(--color-background-secondary);
     color: var(--color-text-secondary);
     padding:1px;
     text-align: center;
     font-family: var(--font-heading);
-   
-  }
+     }
 
 
 header  a {font-size: 3em;
@@ -50,21 +47,24 @@ header  a {font-size: 3em;
           text-decoration: none;
           margin-left:10px}
 
-  header h1 {margin:1px 0px;
-             font-size: 1.6rem;}
-  h3 {margin-bottom:0px}
+.hello {font-size: 1.2em;}
+.welcome {background-image: url(kuvat/koulu.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+padding: 10px;
+font-weight: bold;}
 
-  h2 {font-size: 1.2rem;}
-  main {padding: 1em 10px 40px 10px
-    
-  }
+h1 {margin:1px 0px; font-size: 1.6rem;}
 
-  footer a {text-decoration: none; color:var(--color-text-secondary)}
-  .hello {font-size: 1.2em;
-  
-}
+h3 {margin-bottom:0px}
 
-  footer {background-color: var(--color-background-secondary);
+h2 {font-size: 1.2rem;}
+
+main {padding: 1em 10px 40px 10px}
+
+footer a {text-decoration: none; color:var(--color-text-secondary)}
+
+footer {background-color: var(--color-background-secondary);
   height: 50px;
   width: 100%;
 position:fixed;
@@ -73,14 +73,9 @@ text-align: center;
 display: flex;
   padding:5px 0px 0px  0px; 
   color:var(--color-text-secondary);
-& div {flex:1}}
-
-.welcome {background-image: url(koulu.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-padding: 10px;
-font-weight: bold;}
-
+& div {flex:1}
+& a {text-decoration: none; color:var(--color-text-secondary)}
+}
 
   /* -------------------
      Pikapalvelut
@@ -102,52 +97,42 @@ font-weight: bold;}
      Kampusuutiset ja tapahtumat
   ------------------- */
  
-  .dashboard {
+  #dashboard {
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
-
-  
-  #news, .events {
+  /*
+  #news, #events {
     background-color: var(--color-surface);    
-    
     padding-left: 10px;
     padding-right: 10px;
-  }
+  }*/
 
-  #news h2 {font-size:1em;
-            border-bottom: var(--color-surface) solid 2px
-                     
-}
-
-.events h2 {font-size:1em;}
-.events h3 {font-size: 0.9em;}
-.events li {font-size: 0.8em;}
-#news {background-color: var(--color-background);
-       border-top: var(--color-surface) solid 10px}
-
-
-  #news li {font-size: 0.8em;
-            display: none;}
-
-  #news li span {font-weight: 700;}
-
-  #news ul {      
-           background-color: var(--color-background);
-  
-    padding:0px 0px 5px 20px;   
-    margin:0px}
-
-  #news li::marker {color:var(--color-primary); font-size:1.5em}
-  #news a {color:var(--color-text);
+  #news {
+      & h2 {font-size:1em;background-color: var(--color-surface);
+      padding:10px }         
+      & a {color:var(--color-text);
            text-decoration: none;}
- 
-  #news .start {display: list-item;  
-  /* aloitusnäytön uutiset */
-     
-      
-     margin-bottom: 5px}
+       & ul { background-color: var(--color-background);       
+        padding:0px 0px 5px; margin-bottom: 5px; margin-left:2px;}
+       & li::marker {color:var(--color-primary); font-size:1.5em}
+           & .start {display:list-item} 
+      & li {font-size: 0.8em;
+            display: none;
+            list-style-position: inside;
+            padding-left: 5px;}
+      & li span {font-weight: 700;}
+        & a {color:var(--color-text);
+           text-decoration: none;}
+      & }
+        
+#events {background-color: var(--color-surface);    
+    padding-left: 10px;
+    padding-right: 10px;
+   & h2 {font-size:1em;}
+   & h3 {font-size: 0.9em;}
+   & li {font-size: 0.8em;}}
 
   .events-item {
     margin-bottom: 0.5rem;
@@ -163,15 +148,10 @@ font-weight: bold;}
     & ul {margin: 0; list-style-type: none;
        padding-left:5px}
     & button {height: 2em;}
-    & div {flex:1}
-  
-  }
-  
+    & div {flex:1}}  
 
-.events:last-child {
-  
-  padding-bottom:50px
-    
+.events:last-child {  
+  padding-bottom:50px    
   }
 
   .btn-event {
@@ -183,7 +163,7 @@ font-weight: bold;}
     cursor: pointer;
     font-size: 0.8rem;
   }
- h3 {font-size: 1rem;}
+
 
  /* -----------------------------
      palvelut
