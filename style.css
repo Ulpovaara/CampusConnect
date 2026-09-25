@@ -4,6 +4,9 @@
   ------------------- */
   
 :root {
+
+color-scheme: light; 
+
 --color-primary:rgb(0,121,194);   /*HH Blue */
 --color-secondary:rgb(202,213,16);  /* HH APPLE GREEN */
 --color-accent:rgb(223,0,110);      /* HH PINK */
