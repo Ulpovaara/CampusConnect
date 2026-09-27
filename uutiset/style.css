@@ -61,8 +61,7 @@ footer {background-color:var(--color-primary);
             bottom:0px;
 
           padding:5px 0px 0px 0px; }
- footer div {flex:1}
- footer a {color:var(--color-text-secondary);
+ footer a {flex:1; color:var(--color-text-secondary);
            text-decoration: none;}
 
 
