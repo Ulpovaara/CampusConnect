@@ -163,9 +163,11 @@ alisivujen headerit
 -----------------------*/
 .sub_header { background-color: var(--color-background);
        text-align: left;
-   & h1 {color:var(--color-primary); text-align: center;}
+       display: flex;
+       align-items: center;
+   & h1 {color:var(--color-primary);flex:1; text-align: center;}
     & a {font-size: 3em;
-           color:var(--color-primary);
+          color:var(--color-primary);
           text-decoration: none;
           margin-left:10px}
     }
