@@ -13,16 +13,28 @@ body {margin:0;
        color:var(--color-text);
       background-color:var(--color-background);
       font-family: 'Roboto',sans-serif;}
+/*
 
 header  a {font-size: 3em;
            color:var(--color-primary);
           text-decoration: none;
-          margin-left:10px}
+          margin-left:10px}*/
+
+.sub_header { background-color: var(--color-background);
+       text-align: left;
+       display: flex;
+       align-items: center;
+         & h1 {color:var(--color-primary);flex:1; text-align: center;}
+    & a {font-size: 3em;
+           color:var(--color-primary);
+          text-decoration: none;
+          margin-left:10px;
+        align-self: flex-start;}
+    }
 
 main {padding:0px 10px 40px 10px;}
 
-h1 {color:var(--color-primary);
-    margin-top:0px}
+
 
 h1 img {width: 50px; vertical-align: middle;}
 
